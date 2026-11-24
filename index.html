@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Como aceder ao curso e submeter o contrato · Índice Máximo</title>
-<meta name="description" content="Tutorial passo a passo, com tour guiado, para aceder ao curso na plataforma de formação da Índice Máximo e preencher e submeter o contrato de formação.">
+<title>Como aceder ao seu curso · Índice Máximo</title>
+<meta name="description" content="Tutorial passo a passo, com tour guiado, para aceder ao curso na plataforma de formação da Índice Máximo.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f05a28'/%3E%3Cpath d='M18 33l10 10 18-22' fill='none' stroke='%23fff' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <style>
 :root{--or:#f05a28;--or2:#d94a1a;--navy:#0a2540;--blue:#0b4f8a;--bg:#f3f6fb;--card:#fff;--ink:#1b2433;--mut:#5b6578;--line:#d7dfeb;--ok:#1d6f42;--okbg:#e3f4ea}
@@ -97,11 +97,10 @@ footer{color:var(--mut);font-size:.82rem;text-align:center;padding:10px 16px 28p
 <body>
 <header class="top"><div class="wrap brand"><div class="logo">Índice <b>Máximo</b></div><small>Formação Profissional e Consultoria</small></div></header>
 <main class="wrap" style="padding:0 16px">
-  <h1>Como aceder ao curso e submeter o contrato</h1>
-  <p class="lead">Tutorial passo a passo, com tour guiado. Siga as setas laranja: demora cerca de 4 minutos.</p>
+  <h1>Como aceder ao seu curso</h1>
+  <p class="lead">Tutorial passo a passo, com tour guiado. Siga as setas laranja: demora cerca de 2 minutos.</p>
   <div class="bar">
     <button class="btn" id="btnPlay" type="button">▶ Reprodução automática</button>
-    <a class="btn sec" href="https://youtu.be/gYym9GZdesA" target="_blank" rel="noopener">Ver também o vídeo ↗</a>
     <span class="chip" id="chipStep">Passo 1 de 18</span>
   </div>
 
@@ -112,6 +111,7 @@ footer{color:var(--mut);font-size:.82rem;text-align:center;padding:10px 16px 28p
     <div class="step" id="cStep"></div>
     <h2 id="cTitle"></h2>
     <p id="cText"></p>
+    <p id="cLink" style="margin-top:10px"></p>
     <div class="prog" aria-hidden="true"><i id="cProg"></i></div>
     <div class="nav">
       <button class="btn sec" id="btnPrev" type="button">‹ Anterior</button>
@@ -152,32 +152,14 @@ var STEPS=[
  s:'<div class="pad"><h3 style="color:#0a2540;margin-top:0">As minhas ações de formação</h3><table class="tbl"><tr><th>Ação</th><th>Estado</th><th></th></tr><tr><td>Combate ao Branqueamento de Capitais e Financiamento do Terrorismo</td><td>Em curso</td><td><span class="fbtn" data-hl>Aceder ao Moodle</span></td></tr></table></div>',u:'formacao.indicemaximo.pt/formando/acoes'},
 {t:'O seu curso começa aqui',x:'Já está na página do curso. Clique em «Entrar» para iniciar o curso.',
  s:'<div class="pad"><div class="banner">Combate ao Branqueamento de Capitais e Financiamento do Terrorismo</div><div class="tile"><b>Curso de 8 horas (SCORM)</b><span class="fbtn" data-hl>Entrar</span></div><div class="ph m"></div></div>',u:'moodle.indicemaximo.pt/course/view.php'},
-{t:'Entre na «Secretaria»',x:'Comece pela Secretaria. Leia as instruções e clique em «Preencher o contrato de formação»: vai abrir-se uma nova janela. Deixe a janela do curso aberta.',
- s:'<div class="pad"><h3 style="color:#0a2540;margin-top:0">Secretaria: contrato de formação</h3><p style="color:#3d4a5c">Antes de começar, é preciso formalizar a inscrição com o contrato de formação.</p><span class="fbtn" data-hl>Preencher o contrato de formação ↗</span><div class="ph m" style="margin-top:18px"></div></div>',u:'Janela 1 · o curso'},
-{t:'Preencha os seus dados',x:'Na nova janela, preencha os seus dados, selecione o curso e clique em «Preparar contrato».',
- s:'<div class="pad" style="max-width:420px"><h3 style="color:#0a2540;margin-top:0">Contrato de formação</h3><div class="field"><label>Nome completo</label><div class="inp">Nome Apelido</div></div><div class="field"><label>NIF</label><div class="inp">123456789</div></div><div class="field"><label>Curso</label><div class="inp">Combate ao Branqueamento de Capitais e Financiamento do Terrorismo ▾</div></div><span class="fbtn" data-hl>Preparar contrato</span></div>',u:'Janela 2 · formulário do contrato'},
-{t:'Descarregue o contrato',x:'Descarregue o contrato, em Word ou em PDF.',
- s:'<div class="pad"><h3 style="color:#0a2540;margin-top:0">O contrato está pronto</h3><p style="color:#3d4a5c">Escolha como o quer guardar:</p><span class="fbtn" data-hl>Descarregar Word</span> &nbsp; <span class="fbtn o">Imprimir / PDF</span></div>',u:'Janela 2 · formulário do contrato'},
-{t:'Assine e guarde o contrato',x:'Assine o contrato (de preferência com a Chave Móvel Digital), guarde o ficheiro e volte ao curso, que está na janela ao lado.',
- s:'<div class="pad"><div class="doc"><b>Contrato de formação</b><div class="ph m"></div><div class="ph"></div><div class="ph s"></div><div class="sig" data-hl>Assinatura do formando</div></div></div>',u:'O ficheiro no seu computador'},
-{t:'Volte ao curso e envie o trabalho',x:'Depois de assinar, volte à janela do curso e clique em «Adicionar submissão» (ou «Enviar trabalho»).',
- s:'<div class="pad"><h3 style="color:#0a2540;margin-top:0">Submissão do Contrato Preenchido e Assinado</h3><table class="tbl"><tr><th>Estado da submissão</th><td>Nenhuma submissão efetuada</td></tr></table><p></p><span class="fbtn" data-hl>Adicionar submissão</span></div>',u:'Janela 1 · o curso'},
-{t:'Escolha «Enviar um ficheiro»',x:'Clique no sinal «+», selecione «Enviar um ficheiro» e depois «Escolher ficheiro».',
- s:'<div class="pad"><div class="dlg"><b>Submissão de ficheiros</b><div style="border:2px dashed #bcc8d9;border-radius:10px;padding:26px;text-align:center;margin:10px 0;color:#5b6578"><span class="fbtn" data-hl style="font-size:1.2rem;padding:4px 14px">+</span><div style="margin-top:8px">Enviar um ficheiro › <b>Escolher ficheiro</b></div></div></div></div>',u:'Janela 1 · o curso'},
-{t:'Escolha o contrato assinado',x:'Escolha o ficheiro assinado: está na pasta onde o guardou, por exemplo no ambiente de trabalho. Clique em «Enviar este ficheiro» e depois em «Guardar alterações».',
- s:'<div class="pad"><div class="dlg"><b>Selecionador de ficheiros</b><div class="field"><label>Anexo</label><div class="inp">Contrato_assinado.pdf</div></div><span class="fbtn" data-hl>Enviar este ficheiro</span> &nbsp; <span class="fbtn o">Guardar alterações</span></div></div>',u:'Janela 1 · o curso'},
-{t:'Submeta e confirme',x:'Clique em «Submeter trabalho» e confirme. O contrato fica submetido.',
- s:'<div class="pad"><table class="tbl"><tr><th>Estado da submissão</th><td>Rascunho (não submetido)</td></tr><tr><th>Ficheiro</th><td>Contrato_assinado.pdf</td></tr></table><p></p><span class="fbtn" data-hl>Submeter trabalho</span> &nbsp; <span class="fbtn o">Editar submissão</span></div>',u:'Janela 1 · o curso'},
-{t:'Contrato submetido',x:'Pronto! O contrato está submetido e recebe uma mensagem de confirmação. Pode voltar para o seu curso.',
- s:'<div class="pad"><div class="ok" data-hl>✔ Submetido para avaliação</div><p style="color:#3d4a5c;margin-top:14px">Recebeu uma mensagem de confirmação.</p><span class="fbtn o">Voltar ao curso</span></div>',u:'Janela 1 · o curso'},
 {t:'O curso está pronto para começar',x:'O curso continua na janela ao lado. Vá fazendo todas as atividades, com calma: o seu progresso fica guardado.',
  s:'<div class="pad"><div class="banner">Combate ao Branqueamento de Capitais e Financiamento do Terrorismo</div><div class="tile"><b>Curso de 8 horas (SCORM)</b><span class="fbtn" data-hl>Começar</span></div><div class="ph m"></div></div>',u:'moodle.indicemaximo.pt/course/view.php'},
 {t:'Acompanhe o seu tempo no curso',x:'O tempo que passa na plataforma aparece no bloco «Dedicação». Abra o «Relatório completo» para ver quanto tempo passou no curso.',
  s:'<div class="pad"><div class="blk"><h4>Dedicação</h4><p style="margin:0 0 8px;color:#3d4a5c;font-size:.9rem">Estimativa do seu tempo despendido no módulo:<br><b>2 horas 14 minutos</b></p><span class="fbtn" data-hl style="font-size:.85rem;padding:6px 12px">Relatório completo</span></div></div>',u:'moodle.indicemaximo.pt/course/view.php'}
 ];
 /* passo final (resumo) */
-STEPS.push({t:'Concluído: está tudo pronto',x:'Resumo: 1) faça login em formacao.indicemaximo.pt; 2) abra a sua ação de formação; 3) preencha, assine e submeta o contrato na Secretaria; 4) comece o curso. Em caso de dúvida, ligue para o 224 956 557 (9h às 18h, de 2.ª a 6.ª).',
- s:'<div class="pad"><div class="ok">✔ Login · ✔ Curso · ✔ Contrato submetido</div><ol style="line-height:1.9;color:#3d4a5c"><li>Aceda a <b>formacao.indicemaximo.pt</b> e faça login</li><li>Abra a sua <b>ação de formação</b></li><li>Na <b>Secretaria</b>, preencha, assine e submeta o contrato</li><li>Comece o curso. Bom estudo!</li></ol></div>',u:'moodle.indicemaximo.pt'});
+STEPS.push({t:'Concluído: está tudo pronto',x:'Resumo: 1) faça login em formacao.indicemaximo.pt; 2) vá a E-Formação › Área de formando › Ações de formação; 3) clique em «Acesso ao Moodle» na sua ação; 4) comece o curso. Em caso de dúvida, ligue para o 224 956 557 (9h às 18h, de 2.ª a 6.ª).',
+ s:'<div class="pad"><div class="ok">✔ Login · ✔ Ação de formação · ✔ Curso aberto</div><ol style="line-height:1.9;color:#3d4a5c"><li>Aceda a <b>formacao.indicemaximo.pt</b> e faça login</li><li>Vá a <b>E-Formação › Área de formando › Ações de formação</b></li><li>Clique em <b>Acesso ao Moodle</b> na sua ação</li><li>Comece o curso. Bom estudo!</li></ol></div>',u:'moodle.indicemaximo.pt'});
 
 var N=STEPS.length,cur=0,timer=null,seen={};
 var ring=document.createElement('div');ring.className='ring';ring.setAttribute('aria-hidden','true');
@@ -203,7 +185,7 @@ function render(i,fromAuto){
   stage.innerHTML=win(s.u||'',s.s,s.hlu);
   stage.appendChild(ring);stage.appendChild(arrow);
   $('#cStep').textContent='Passo '+(cur+1)+' de '+N;$('#chipStep').textContent='Passo '+(cur+1)+' de '+N;
-  $('#cTitle').textContent=s.t;$('#cText').textContent=s.x;
+  $('#cTitle').textContent=s.t;$('#cText').textContent=s.x;var L=$('#cLink');L.innerHTML='';if(s.link){var a=document.createElement('a');a.className='btn';a.href=CONTRATO;a.target='_blank';a.rel='noopener';a.textContent=s.link+' ↗';L.appendChild(a)}
   $('#cProg').style.width=Math.round(100*(cur+1)/N)+'%';
   $('#btnPrev').disabled=cur===0;
   $('#btnNext').textContent=cur===N-1?'Recomeçar ↺':'Seguinte ›';
