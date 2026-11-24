@@ -134,7 +134,7 @@ footer{color:var(--mut);font-size:.82rem;text-align:center;padding:10px 16px 28p
 var $=function(s,r){return (r||document).querySelector(s)};
 var stage=$('#stage');
 function win(url,body,hlUrl){return '<div class="win"><div class="wbar"><i></i><i></i><i></i><div class="url"'+(hlUrl?' data-hl':'')+'>'+url+'</div></div><div class="wbody">'+body+'</div></div>'}
-function head(act){var nav=['Início','Formação','Calendário','Ajuda'].map(function(n){return '<span'+(n===act?' data-hl style="background:#f05a28"':'')+'>'+n+'</span>'}).join('');return '<div class="sh"><div class="lg">Índice <b>Máximo</b></div><nav>'+nav+'</nav><div class="pill">Nome Apelido</div></div>'}
+function head(act){var nav=['ÍNDICE MÁXIMO','CURSOS','E-SECRETARIA','E-FORMAÇÃO','RECRUTAMENTO','CONTACTOS'].map(function(n){return '<span'+(n===act?' data-hl style="background:#f05a28"':'')+'>'+n+'</span>'}).join('');return '<div class="sh"><div class="lg">Índice <b>Máximo</b></div><nav>'+nav+'</nav><div class="pill">Nome Apelido</div></div>'}
 function ph(){return '<div class="ph m"></div><div class="ph"></div><div class="ph s"></div>'}
 
 var STEPS=[
@@ -144,8 +144,8 @@ var STEPS=[
  s:'<div class="pad" style="text-align:center"><div class="logo" style="font-size:1.6rem;font-weight:800;color:#0a2540;margin:22px 0 6px">Índice <b style="color:#f05a28">Máximo</b></div><p style="color:#5b6578">Plataforma de formação</p><span class="fbtn">Entrar</span></div>',u:'formacao.indicemaximo.pt',hlu:1},
 {t:'Faça login com as suas credenciais',x:'O utilizador é o seu número de contribuinte (NIF) e a palavra-passe é a que lhe foi enviada.',
  s:'<div class="pad" style="max-width:340px;margin:0 auto"><h3 style="color:#0a2540">Iniciar sessão</h3><div class="field"><label>Utilizador (NIF)</label><div class="inp" data-hl>123456789</div></div><div class="field"><label>Palavra-passe</label><div class="inp">••••••••</div></div><span class="fbtn">Entrar</span></div>',u:'formacao.indicemaximo.pt/login'},
-{t:'Clique em «Formação»',x:'Depois do login, o seu nome aparece na barra superior. Clique em «Formação».',
- s:head('Formação')+'<div class="pad">'+ph()+'</div>',u:'formacao.indicemaximo.pt'},
+{t:'Clique em «E-Formação»',x:'Depois do login, o seu nome aparece na barra superior. No menu, clique em «E-FORMAÇÃO».',
+ s:head('E-FORMAÇÃO')+'<div class="pad">'+ph()+'</div>',u:'formacao.indicemaximo.pt'},
 {t:'Área de formando › Ações de formação',x:'No lado esquerdo há vários menus. Escolha «Área de formando» e depois «Ações de formação».',
  s:'<div class="cols2"><div class="side"><div>Painel</div><div style="background:#fde3d9;font-weight:700">Área de formando ▾</div><div class="sub" data-hl style="background:#fff;border:1px solid #f05a28;font-weight:700">Ações de formação</div><div>Documentos</div><div>Mensagens</div></div><div class="pad">'+ph()+ph()+'</div></div>',u:'formacao.indicemaximo.pt/formando'},
 {t:'Escolha a sua ação de formação',x:'Aqui estão todas as ações em que está inscrito. Clique na ação correspondente e aceda ao Moodle: entra diretamente na página do curso.',
